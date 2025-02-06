@@ -38,7 +38,7 @@ function App() {
       </div>
       <div className='middle-container'>
         <p className='middle-head'><b>Koosta soovinimekiri</b> ja vaata oma uue sisustuse kuumakset</p>
-        <table>
+        <table className='table'>
           <thead>
             <tr className='table-head'>
               <th>TOODE</th>
@@ -49,20 +49,32 @@ function App() {
           {products.map((product, index) => (
               <tr key={index}>
                 <td>
-                  <input type="text" value={product.name} onChange={(e) => updateProduct(index, 'name', e.target.value)}/>
+                  <input className='input-toode' type="text" value={product.name} onChange={(e) => updateProduct(index, 'name', e.target.value)}/>
                 </td>
                 <td>
-                  <input type="number" value={product.price} onChange={(e) => updateProduct(index, 'price', e.target.value)}/> €
+                  <input className='input-hind' type="number" value={product.price} onChange={(e) => updateProduct(index, 'price', e.target.value)}/> €
                 </td>
               </tr>
             ))}
           </tbody>
         </table>
         <div className='total'>{totalSum.toFixed(2)} €</div>
-        <button onClick={addProduct}><img className='add-button' src="/add.png" alt="" /> Lisa toode</button>
-        <button onClick={deleteRow}><img className='delete-button' src="/delete.png" alt="" /> Kustuta</button>
-        <button>Taotle sisustuslaenu</button>
-        <div><u>Tutvu tingimustega</u></div>
+        <button className='add-button' onClick={addProduct}><img className='add-button-picture' src="/add.png" alt="" /> Lisa toode</button>
+        <button className='delete-button' onClick={deleteRow}><img className='delete-button-picture' src="/delete.png" alt="" /> Kustuta</button>
+        <button className='loan-button'>Taotle sisustuslaenu</button>
+        <button className='conditions-button'>Tutvu tingimustega</button>
+      </div>
+      <div className='footer'>
+        <span><img className='service-picture' src="/customer-service.png" alt="" /></span>
+        <div>
+          <span className='service-name'>LHV <b>Klienditugi</b></span>
+          <br />
+          <span className='service-text'>Kui sul tekib pangateenuse kasutamisel probleeme, saad klienditoe infotelefonilt abi ööpäev ringi.</span>
+        </div>
+        <span><img className='phone-picture' src="/telephone.png" alt="" /></span>
+        <span>6 800 400</span>
+        <span><img className='email-picture' src="/email.png" alt="" /></span>
+        <span><u>info@lhv.ee</u></span>
       </div>
     </>
   )
