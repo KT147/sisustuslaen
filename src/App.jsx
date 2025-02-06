@@ -33,11 +33,18 @@ function App() {
           <img className='arrow-down' src="/arrow-down.png" alt="" />
         </div>
       </div>
-      <div>
+      <div className='loan-picture-holder'>
         <img className='loan-picture' src="/laenupilt.png" alt="" />
       </div>
       <div className='middle-container'>
         <p className='middle-head'><b>Koosta soovinimekiri</b> ja vaata oma uue sisustuse kuumakset</p>
+        <div className='total'>{totalSum.toFixed(2)} €</div>
+          <div>
+            <button className='loan-button'>Taotle sisustuslaenu</button>
+          </div>
+          <div>
+            <button className='conditions-button'>Tutvu tingimustega</button>
+          </div>
         <table className='table'>
           <thead>
             <tr className='table-head'>
@@ -58,11 +65,9 @@ function App() {
             ))}
           </tbody>
         </table>
-        <div className='total'>{totalSum.toFixed(2)} €</div>
         <button className='add-button' onClick={addProduct}><img className='add-button-picture' src="/add.png" alt="" /> Lisa toode</button>
         <button className='delete-button' onClick={deleteRow}><img className='delete-button-picture' src="/delete.png" alt="" /> Kustuta</button>
-        <button className='loan-button'>Taotle sisustuslaenu</button>
-        <button className='conditions-button'>Tutvu tingimustega</button>
+        <br />
       </div>
       <div className='footer'>
         <span><img className='service-picture' src="/customer-service.png" alt="" /></span>
@@ -72,9 +77,9 @@ function App() {
           <span className='service-text'>Kui sul tekib pangateenuse kasutamisel probleeme, saad klienditoe infotelefonilt abi ööpäev ringi.</span>
         </div>
         <span><img className='phone-picture' src="/telephone.png" alt="" /></span>
-        <span>6 800 400</span>
+        <span className='phone'>6 800 400</span>
         <span><img className='email-picture' src="/email.png" alt="" /></span>
-        <span><u>info@lhv.ee</u></span>
+        <span className='email'><u>info@lhv.ee</u></span>
       </div>
     </>
   )

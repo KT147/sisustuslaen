@@ -91,7 +91,7 @@ button {
   display: flex;
   align-items: center;
   position: relative; 
-  left: -44px; 
+  left: -40px; 
 }
 
 .header-extra{
@@ -102,18 +102,21 @@ button {
   height: 16px;
 }
 
+.loan-picture-holder{
+  position:relative;
+  display: flex;
+}
+
 .loan-picture {
-  position: absolute;
-  bottom: 110px; 
-  left: 400px; 
-  transform: translateX(-50%); 
   height: 250px;
+  margin-top: -200px;
+  margin-left: -30px;
 }
 
 .middle-container{
   background-color:rgb(248, 244, 244);
   padding: 20px;
-  margin: 100px 0px;
+  margin: 80px 0px;
   width: 760px;
   min-height: 300px;
 }
@@ -124,6 +127,7 @@ button {
   max-width: 450px; 
   line-height: 1.5; 
   text-align: center;
+  margin-bottom: -20px;
 }
 
 .table {
@@ -176,16 +180,17 @@ button {
 }
 
 .total {
-  position: absolute;
-  right: 260px;
-  top: 108%;
+  position:relative;
+  left: 230px;
+  bottom: -70px;
   font-size: 30px;
+  margin-top: -40px;
 }
 
 .loan-button {
-  position: absolute;
-  right: 230px;
-  top: 116%;
+  position:relative;
+  left: 230px;
+  bottom: -80px;
   font-size: 14px;
   background-color: rgb(81, 70, 70);
   color: white;
@@ -194,15 +199,16 @@ button {
 }
 
 .conditions-button{
-  position: absolute;
-  right: 234px;
+  position: relative;
+  left: 230px;
   font-size: 14px;
-  top: 123%;
+  bottom: -90px;
   border-bottom: 1px solid gray;
 }
 .footer {
+  margin: 120px 0;
   display: flex;
-  justify-content: space-between;
+  
 }
 
 .service-picture{
@@ -211,12 +217,37 @@ button {
 
 .phone-picture {
   width: 20px;
+  margin-left: 50px;
+}
+
+.phone {
+  margin-left: 20px;
 }
 
 .email-picture {
   width: 20px;
+  margin-left: 50px;
+}
+
+.email {
+  margin-left: 20px;
 }
 
 .service-name{
- 
+  display: inline-block;
+  line-height: 1.5; 
+  font-size: 18px; 
+  position: relative;
+  right: 18%;
+  text-align: left;
+}
+
+.service-text{
+  display: inline-block;
+  max-width: 300px; 
+  line-height: 1.5; 
+  font-size: 14px; 
+  text-align: left;
+  position: relative;
+  left: 10%
 }
