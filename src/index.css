@@ -3,9 +3,7 @@
   line-height: 1.5;
   font-weight: 400;
 
-  color-scheme: light dark;
-  color: rgba(255, 255, 255, 0.87);
-  background-color: #242424;
+
 
   font-synthesis: none;
   text-rendering: optimizeLegibility;
@@ -251,3 +249,170 @@ button {
   position: relative;
   left: 10%
 }
+
+@media screen and (max-width: 700px) {
+ 
+  .loan-picture {
+    height: 700px;
+    margin-top: 1px;
+  }
+
+  .header {
+    position: absolute; 
+    top: 800px; 
+    margin-left: -30px;
+    max-width: 700px;
+    z-index: 2; 
+  }
+
+  .header-head {
+    font-size: 40px;
+    text-align: left;
+  }
+
+  .header-text{
+    display: none;
+  }
+
+  .header-extra {
+    display: none;
+  }
+
+  .arrow-down {
+    height: 100px;
+    margin-top: -80px;
+    margin-left: 650px
+  }
+
+  .middle-container{
+    max-width: 660px;
+    margin-left: -30px;
+    margin-top: 30px ;
+    min-height: 700px;
+  }
+
+  .middle-head {
+    font-size: 40px;
+    margin-top: 20px;
+  }
+
+  .table {
+    padding-top: 150px;
+    font-size: 30px;
+    padding-left: 80px;
+  }
+
+  .table-head {
+    font-size: 25px;
+  }
+
+  .input-toode{
+    font-size: 30px;
+  }
+
+  .input-hind{
+    font-size: 30px;
+  }
+
+  .add-button {
+  font-size: 30px;
+   display: flex;
+   position:static;
+   margin-left: 150px;
+
+  }
+
+  .add-button-picture{
+    height: 30px;
+    width: 30px;
+    margin-right: 10px;
+  }
+
+  .delete-button {
+    font-size: 30px;
+    display: flex;
+   position:static;
+   margin-left: 380px;
+   margin-top: -50px;
+  }
+
+  .delete-button-picture{
+    height: 30px;
+    width: 30px;
+    margin-right: 10px;
+  }
+
+  .total {
+    align-items: center;
+    font-size: 50px;
+    margin-right: 450px;
+    padding-bottom: 10px;
+  }
+
+  .loan-button{
+    font-size: 25px;
+    height: 70px;
+    width: 500px;
+    margin-left: -440px;
+  }
+
+  .conditions-button{
+    font-size: 28px;
+    margin-left: -440px;
+  }
+
+  .footer {
+    display: block;
+  }
+  .service-picture {
+    width: 200px;
+    margin-left: 240px;
+    margin-top: -50px;
+  }
+  .service-name {
+    font-size: 50px;
+    display: flex;
+    margin-left: 160px;
+    margin-top: 20px;
+  }
+
+  .service-text {
+    font-size: 25px;
+    line-height: 1.5;
+    text-align: center;
+    margin-left: 180px; 
+    margin-right: 200px; 
+    position: static; 
+    width: 1700px;
+  }
+
+  .phone-picture {
+    width: 50px;
+    margin-top: 30px;
+    margin-left: 140px;
+  }
+
+  .phone {
+    font-size: 30px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-left: 250px;
+    margin-top: -50px;
+    position: relative;
+    min-width: 200px;
+  }
+
+  .email-picture{
+    width: 50px;
+    margin-top: 30px;
+    margin-left: 140px;
+  }
+
+  .email{
+    font-size: 30px;
+    margin-left: 250px;
+    position: relative;
+    top: -50px;
+  }
+ }
