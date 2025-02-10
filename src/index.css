@@ -4,7 +4,6 @@
   font-weight: 400;
 
 
-
   font-synthesis: none;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
@@ -252,7 +251,6 @@ button {
 }
 
 @media screen and (max-width: 700px) {
- 
   
   .loan-picture {
     height: 700px;
@@ -261,7 +259,7 @@ button {
 
   .header {
     position: absolute; 
-    top: 800px; 
+    top: 485px; 
     margin-left: -30px;
     max-width: 700px;
     z-index: 2; 
@@ -347,8 +345,9 @@ button {
   .total {
     align-items: center;
     font-size: 50px;
-    margin-right: 450px;
+    margin-left: -400px;
     padding-bottom: 10px;
+    min-width: 400px;
   }
 
   .loan-button{
